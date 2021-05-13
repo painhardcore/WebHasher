@@ -3,7 +3,7 @@
 Tool which makes http requests and prints the address of the request along with the
 MD5 hash of the response.
 
-## Requiremets
+## Requirements
 
 - The tool must be able to perform the requests in parallel so that the tool can complete sooner.
  The order in which addresses are printed is not important.
