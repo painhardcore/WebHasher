@@ -15,19 +15,26 @@ MD5 hash of the response.
 ## Build
 
 ```bash
-go build -o myhttp main.go
+go build -o myhttp ./cmd/webhasher/webhasher.go
 ```
 
 ## Test
+
+```bash
+go test -v  -cover ./pkg/...
 ```
 
-```
-## Usage
+## Options
+
+```bash
+Usage of ./myhttp:
+  -parallel int
+        number of parallel requests (default 10)
 ```
 
-```
 ### Example
-```
+
+```bash
 ./myhttp -parallel 3 adjust.com google.com facebook.com yahoo.com yandex.com twitter.com reddit.com/r/funny reddit.com/r/notfunny baroquemusiclibrary.com 
 
 google.com 9df508f589d39855eb2152749a66b308
